@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Devdasa Movies</title>
+
+<style>
+
+body{
+background:#111;
+color:white;
+font-family:Arial;
+text-align:center;
+}
+
+h1{
+color:red;
+margin-top:20px;
+}
+
+.poster{
+margin-top:40px;
+cursor:pointer;
+}
+
+.poster img{
+width:250px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.poster img:hover{
+transform:scale(1.1);
+}
+
+#player{
+display:none;
+margin-top:30px;
+}
+
+video{
+width:700px;
+border-radius:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>🎬 Devdasa Movies</h1>
+
+<div class="poster" onclick="playMovie()">
+<img src=kgf.jpg>
+<p>Click Poster to Watch Movie</p>
+</div>
+
+<div id="player">
+<video controls>
+<source src="movie
+.mp4"type="video/mp4">
+</video>
+</div>
+
+<script>
+
+function playMovie(){
+document.getElementById("player").style.display="block";
+}
+
+</script>
+
+</body>
+</html>
